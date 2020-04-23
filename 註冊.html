@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+         <form method="get" action="rebistration.php">
+            姓名:<input type="text" name="name"><br>
+            性別:<input type="radio" name="gender" value="M" checked >男
+                 <input type="radio" name="gender" value="F">女
+                 <input type="radio" name="gender" value="N">多元性別<br>
+            興趣:<input type="checkbox" name="interest" value="TV" checked >看電視   <!-- checked 預設值-->
+                 <input type="checkbox" name="interest" value="Music">聽音樂
+                 <input type="checkbox" name="interest" value="movie">看電影<br>
+            居住地:<select name="county">  <!-- option 選項-->
+                     <option value="hsinchu">新竹</option>
+                     <option value="taoyuan"selected>桃園</option>
+                     <option value="miaoli">苗栗</option>
+            </select><br>
+             自傳: <br>
+            <textarea name="autobiography" rows="5" cols="40"></textarea><br> <!--textarea 建立一個多行的文字輸入欄位-->
+            <input type="submit" value="註冊">
+            <input type="reset" value="清除">
+        </form>
+    </body>
+</html>
